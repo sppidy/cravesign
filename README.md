@@ -43,7 +43,9 @@ done
        ```
 
 2. **Generate Keys**: Use the provided script to generate keys. Each key will consist of a `.x509.pem` certificate and a `.pk8` private key.
+
    *Note : Generate keys without password, the keys should not be encrypted.*
+
    The subject line in the script specifies the details for the certificate:
    - `C`: Country
    - `ST`: State
@@ -53,7 +55,7 @@ done
    - `CN`: Common Name
    - `emailAddress`: Email address associated with the certificate
 
-3. **Store Keys**: Ensure the generated keys are stored in the `vendor/keys` directory. The structure should look like this:
+4. **Store Keys**: Ensure the generated keys are stored in the `vendor/keys` directory. The structure should look like this:
    ```
    vendor/keys/
    ├── platform.x509.pem
