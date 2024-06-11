@@ -33,12 +33,17 @@ done
 
 ### Detailed Instructions for Generating Keys
 1. **Install OpenSSL**: Ensure OpenSSL is installed on your system.
-   ```sh
-   sudo apt-get install openssl
-   ```
+   - For debian-based systems
+       ```sh
+       sudo apt-get install openssl
+       ```
+   - For Arch-based systems
+       ```sh
+       sudo pacman -S openssl
+       ```
 
 2. **Generate Keys**: Use the provided script to generate keys. Each key will consist of a `.x509.pem` certificate and a `.pk8` private key.
-
+   *Note : Generate keys without password, the keys should not be encrypted.*
    The subject line in the script specifies the details for the certificate:
    - `C`: Country
    - `ST`: State
