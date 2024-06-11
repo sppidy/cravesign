@@ -80,6 +80,7 @@ To include the keys in your Android build, add the following line to your `linea
 ```makefile
 include vendor/keys/keys.mk
 ```
+And mainly dont forget to clone this repo to vendor/keys
 
 ## Conclusion
 By following these steps, you can generate, store, and use cryptographic keys to sign various components of your Android build. This ensures that your build is secure and maintains the integrity of the operating system.
